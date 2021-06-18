@@ -365,23 +365,39 @@ body {
 .contato {
   background-color: rgb(237, 205, 58);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  h2 {
-    font-size: 54px;
-    color: #fff;
+  .contato__wrapper {
+    max-width: 500px;
+    text-align: center;
 
-    @media (max-width: 710px) {
-      font-size: 44px;
+    h2 {
+      font-size: 54px;
+      color: #fff;
+  
+      @media (max-width: 710px) {
+        font-size: 44px;
+      }
+      @media (max-width: 540px) {
+        font-size: 34px;
+      }
+  
+      @media (max-width: 420px) {
+        font-size: 24px;
+      }
     }
-    @media (max-width: 540px) {
-      font-size: 34px;
-    }
-
-    @media (max-width: 420px) {
-      font-size: 24px;
+  
+    p {
+      margin-top: 20px;
+      line-height: 30px;
+      font-size: 25px;
+      font-weight: 400;
+      font-style: italic;
+      color: #fff;
+      padding: 0 10px;
     }
   }
+
+  
 }
