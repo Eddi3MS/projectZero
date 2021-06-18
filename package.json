@@ -1,0 +1,20 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Eddi3MS/setup.git",
+  "author": "Eddi3MS <edsonmarc2014@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp-babel": "^7.0.1"
+  }
+}
