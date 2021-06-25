@@ -35,6 +35,19 @@ body {
   min-height: 100vh;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 60px, 0);
+    transform: translate3d(0, 60px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 .cabeçalho {
   background-image: url("../img/cabeçalho.jpg");
   background-size: cover;
@@ -52,6 +65,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     .Logo__Card {
       width: 65%;
@@ -84,6 +103,12 @@ body {
   h1 {
     font-size: 54px;
     color: #6b6662;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
   }
 
   .planos__call_wrapper {
@@ -91,6 +116,12 @@ body {
     align-items: center;
     margin-top: 40px;
     gap: 20px;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     .planos__call {
       width: 350px;
@@ -158,6 +189,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     h2 {
       font-size: 54px;
@@ -230,6 +267,12 @@ body {
     margin: 30px auto;
     font-size: 54px;
     color: #6b6662;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
   }
 
   .sobre__nos_wrapper {
@@ -237,6 +280,12 @@ body {
     align-items: center;
     margin-top: 40px;
     gap: 20px;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     .sobre {
       width: 350px;
@@ -320,6 +369,12 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     @media (max-width: 710px) {
       margin: 0 auto;
@@ -371,23 +426,29 @@ body {
   .contato__wrapper {
     max-width: 500px;
     text-align: center;
+    opacity: 0;
+
+    &.animate {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: both;
+    }
 
     h2 {
       font-size: 54px;
       color: #fff;
-  
+
       @media (max-width: 710px) {
         font-size: 44px;
       }
       @media (max-width: 540px) {
         font-size: 34px;
       }
-  
+
       @media (max-width: 420px) {
         font-size: 24px;
       }
     }
-  
+
     p {
       margin-top: 20px;
       line-height: 30px;
@@ -398,6 +459,4 @@ body {
       padding: 0 10px;
     }
   }
-
-  
 }

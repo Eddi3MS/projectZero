@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var options={threshold:.3},observedEntries=document.querySelectorAll(".observe"),observedEntriesObserver=new IntersectionObserver(function(e,r){e.forEach(function(e){e.isIntersecting&&(e.target.classList.add("animate"),r.unobserve(e.target))})},options);observedEntries.forEach(function(e){observedEntriesObserver.observe(e)});
